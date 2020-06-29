@@ -1,14 +1,15 @@
 # Petition template
 
 ```bash
-cat "vetoomus.tsv" | python print.py
+cat "vetoomus.csv" | python print.py
 open out.pdf
 ```
 
 ## Installing
 
 ```bash
-virtualenv venv --python=python3
+python3 -m venv ./venv
+. venv/bin/activate
 pip install -r requirements.txt
 ```
 

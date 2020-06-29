@@ -10,7 +10,7 @@ A4_Y = 294
 
 IMG_FILENAME = 'logo-mustavalkoinen-valkoiselle.png'
 FONT_FILENAME = 'fonts/Ubuntu-R.ttf'
-TEXT = "S-ryhmä on yksi viimeisistä elintarvikeyrityksistä Suomessa, joka ei ole vielä ilmoittanut luopuvansa häkkimunien myynnistä. Me allekirjoittaneet pyydämme, että S-ryhmä luopuu häkkimunista."
+TEXT = "Pesintäaikaan tapahtuva metsästys johtaa lähes vääjäämättä siihen, että poikaset nääntyvät hitaasti ravinnon ja suojan puutteeseen. Me allekirjoittaneet vaadimme, että vieraslajienkin metsästys pesintäaikaan kielletään."
 PRINT_LOGO = True
 FONT_SIZE = 7
 DEBUG = 0
@@ -84,7 +84,7 @@ def write_document(out, rows):
 
 def load_csv():
     """Return generator which outputs csv rows."""
-    for i, row in enumerate(csv.reader(sys.stdin, delimiter=',', quotechar='"')):
+    for i, row in enumerate(csv.reader(sys.stdin, delimiter=',')):
         if i == 0:
             continue
 
