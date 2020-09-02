@@ -16,9 +16,5 @@ pip install -r requirements.txt
 ```
 ## Data format
 
-Include one header row:
-
-Etunimi,Sukunimi,Asuinpaikka
-Matti,Virtanen,Helsinki
-Liisa,Haitari,Turku
+Accepts csv files downloaded directly from drupal. Needs columns sahkoposti, etunimi, sukunimi, paikkakunta. Other fields discarded.
 
