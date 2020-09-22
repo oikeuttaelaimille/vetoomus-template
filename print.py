@@ -10,9 +10,10 @@ import re
 A4_X = 210
 A4_Y = 294
 
-IMG_FILENAME = 'logo-mustavalkoinen-valkoiselle.png'
+#IMG_FILENAME = 'logo-mustavalkoinen-valkoiselle.png'
+IMG_FILENAME = 'logo-varillinen.png'
 FONT_FILENAME = 'fonts/Ubuntu-R.ttf'
-TEXT = "Vetoamme teihin, jotta toimisitte turkistarhauksen kieltämistä ajavan aloitteen puolesta Kokoomuksen puoluekokouksessa."
+TEXT = "Vetoamme Kokoomuksen puoluevaltuustoon, jotta se hyväksyisi turkistarhauksen kieltoa ajavan aloitteen."
 PRINT_LOGO = True
 FONT_SIZE = 7
 DEBUG = 0
@@ -132,7 +133,7 @@ def load_csv(infile):
 
 
 if __name__ == '__main__':
-    OUTFILE = 'out.pdf'
+    OUTFILE = 'Vetoomuksen_allekirjoittajat.pdf'
 
     data = []
 
