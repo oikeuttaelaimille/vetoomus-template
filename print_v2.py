@@ -134,7 +134,7 @@ def load_csv(infile):
 
 def normalize_row(row):
     for field, value in row._asdict().items():
-        row = row._replace(**{field: unicodedata.normalize("NFC", value)})
+        row = row._replace(**{field: unicodedata.normalize("NFKC", value)})
     return row
 
 if __name__ == '__main__':
